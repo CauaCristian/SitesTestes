@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+	font-family: 'Kavoon', cursive;
+	color: #7b167a;
+}
+header{
+	width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 4;
+    background-color: white;
+	position: fixed;
+}
+nav ul{
+    display: flex;
+    color: black;
+}
+nav li {
+    margin: 20px;
+    list-style: none;
+
+}
+nav li:hover{
+	color: #7b167a;
+}
+button{
+	width: 120px;
+	padding: 12px;
+	border-radius: 20px;
+	border: none;
+	background-color: #7b167a;
+	color: black;
+}
+button:hover{
+	background-color: white;
+	color: black;
+	border: solid black;
+	transition: 400ms;
+}
+.logo{
+	width: 80px;
+	height: 80px;
+}
+.logo img {
+	width: 100%;
+}
+main{
+	width: 100%;
+}
+.inicio{
+	
+	width: 100%;
+	height: 960px;
+	background-size: cover;
+	position: relative;
+}
+.inicio p{
+	font-size: 24px;
+}
+.icons3d{
+
+	width: 120px;
+	height: 120px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.icons3d img{
+	width: 100%;
+}
+@keyframes movediv1 {
+	0%{
+		left: 0;
+	}
+	100%{
+		left: 50%;
+	}	
+}
+.iniciodiv1{
+	width: 450px;
+	height: 600px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 25px;
+	border: solid 4px ;
+	animation:movediv1;
+	animation-duration: 4s;
+
+}
+.icon{
+	display: flex;
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+        .card{
+            width: 400px;
+            height: 400px;
+            background-color: rgba(0, 0, 255, 0.541);
+            margin: auto;
+            border-radius: 20px;
+        }
+        .numeros{
+            margin: auto;
+            width: 150px;
+            height: 80px;
+            box-sizing: border-box;
+        }
+        .numeros h1{
+            display: inline;
+            color: white;
+        }
+        .botoes{
+            margin: auto;
+            width: 150px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>CRONOMETRO</h1>
+        <div class="numeros">
+            <h1 id="h3">(00:</h1>
+            <h1 id="h2">00:</h1>
+            <h1 id="h1">00)</h1>
+        </div>
+        <div class="botoes">
+            <input type="submit" value="Iniciar" onclick="iniciar()">
+            <input type="submit" value="Parar" onclick="parar()">
+            <input type="submit" value="Zerar" onclick="zerar()">
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+    
+</body>
+</html>

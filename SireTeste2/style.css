@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Carter One', cursive;
+}
+header{
+
+    background-color: #18295A;
+    height: 80px;
+    width: 90%;
+    margin: auto;
+}
+main{
+    width: 90%;
+    margin: auto;
+    height: 570px;
+
+}
+footer{
+    background-color: #18295A;
+    height: 45px;
+    width: 90%;
+    margin: auto;
+}
+.vermelho{
+    color: red;
+}
+.azul{
+    color:#18295A ;
+}
+.azulclaro{
+    color: #7F6FEA;
+}
+.conteudo{
+    display: flex;
+}
+.desaparecido{
+    display: none;
+}
+.desaparecido img{
+    
+    width: 30px;
+}
+.logos{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 40px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+.logos img{
+    width: 100%;
+
+}
+nav{
+    margin-top: 1.5%;
+    float: right;
+    margin-right: 40px;
+}
+.ul1 li:hover{
+    color: #7F6FEA;
+    transition-delay: 0.05s;
+}
+.ul2 li:hover{
+    color: #FF8C00;
+    transition-delay: 0.05s;
+}
+nav li{
+    display: inline;
+    margin-right: 40px;
+    color: white;
+}
+.seta{
+    display: inline;
+}
+.seta img{
+    
+    width: 30px;
+}
+#setadireita{
+    margin-top: 22%;
+    margin-left: 2%;
+    float: right;
+
+}
+
+#setaesquerda{
+    margin-top: 22%;
+    float: left;
+
+}
+.pacotes1{
+    width: 75%;
+    display: inline;
+    margin-top: 2.3%;
+    height: 90%;
+    padding: 2%;
+    
+    font-size: 13px;
+    box-sizing: border-box;
+    background-color: #18295a0e;
+}
+.pacotes1 li{
+    list-style-image: url(check2.png);
+    
+}
+.imgpacotes1{
+    width:65%;
+    margin-top: 2.3%;
+    margin-left: 2%;
+    box-sizing: border-box;
+    background-color: #18295A;
+
+}
+.imgpacotes1 img{
+    width: 100%;
+}
+.pacotes2{
+    width: 75%;
+    height: 80%;
+    display: inline;
+    margin-top: 2.3%;
+    padding: 2%;
+    margin-left: 2%;
+    font-size: 13px;
+    box-sizing: border-box;
+    background-color: #18295a0e;
+}
+.pacotes2 li{
+    list-style-image: url(check2.png);
+    
+}
+button{
+    margin-top:30%;
+    padding: 18px;
+    width: 80%;
+    margin-left: 9%;
+    color: white;
+    background-color: #18295A;
+    border-style: none;
+}
+button:hover{
+    background-color: #7F6FEA;
+    transition-delay: 0.05s;
+}

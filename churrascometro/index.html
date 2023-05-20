@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>churrascometro</title>
+    <script>
+        function calcular(){
+            let adultos = document.getElementById("adultos")
+            let crianças = document.getElementById("crianças")
+            let duraçao = document.getElementById("duraçao")
+            let kgcarne = document.getElementById("kgcarne")
+            let ltcerveja = document.getElementById("ltcerveja")
+            let ltrefri = document.getElementById("ltrefri")
+            duraçao = duraçao.value
+            if(duraçao < 6){
+                let calccarne = (0.4*(adultos.value)) + (0.4*((crianças.value)/2))
+                let calccerveja = 1.2*(adultos.value)
+                let calcrefri = (1*(adultos.value)) + (1*((crianças.value)/2))
+                kgcarne.innerHTML =  "necessario " + calccarne + " kg de carne "
+                ltcerveja.innerHTML = "necessario " + calccerveja + " lt de cerveja"
+                ltrefri.innerHTML = "necessario " + calcrefri + " lt de bebida"
+                console.log(adultos.value)
+            }
+            else {
+                let calccarne = (0.65*(adultos.value)) + (0.65*((crianças.value)/2))
+                let calccerveja = 2*(adultos.value)
+                let calcrefri = (1.5*(adultos.value)) + (1.5*((crianças.value)/2))
+                kgcarne.innerHTML =  "necessario " + calccarne + " kg de carne "
+                ltcerveja.innerHTML = "necessario " + calccerveja + " lt de cerveja"
+                ltrefri.innerHTML = "necessario " + calcrefri + " lt de bebida"
+            }
+        }
+    </script>
+    <style>
+        .card{
+            width: 400px;
+            height: 400px;
+            background-color: rgba(0, 0, 255, 0.541);
+            margin: auto;
+            border-radius: 20px;
+        }
+        input{
+            display: block;
+            padding: 4px;
+            margin: 20px auto 20px auto;
+        }
+        h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card" id="card">
+        <h1>CHURRASCOMETRO</h1>
+        <input type="number" id="adultos" placeholder="Quantidade de adultos">
+        <input type="number" id="crianças" placeholder="Quantidade de crianças">
+        <input type="number" id="duraçao" placeholder="Duração">
+        <input type="submit" onclick="calcular()">
+        <h2 id="kgcarne"></h2>
+        <h2 id="ltcerveja"></h2>
+        <h2 id="ltrefri"></h2>
+        
+    </div>
+</body>
+</html>
